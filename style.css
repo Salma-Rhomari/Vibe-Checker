@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #f5f5f5;
+  transition: background 0.6s ease;
+}
+
+main {
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.moods {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mood-btn {
+  padding: 14px 28px;
+  font-size: 1rem;
+  border: 2px solid #f5f5f5;
+  background: transparent;
+  color: #f5f5f5;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mood-btn:hover {
+  background: #f5f5f5;
+  color: #1a1a2e;
+}
+
+.result {
+  margin-top: 50px;
+  transition: opacity 0.4s ease;
+}
+
+.result.hidden {
+  display: none;
+}
+
+#result-genre {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#result-artist {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
